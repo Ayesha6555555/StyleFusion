@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>BMI Calculator</title>
+   
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>BMI Calculator</h1>
+        <div class="tabs">
+            <button class="tab active" id="us-units">US Units</button>
+            <button class="tab" id="metric-units">Metric Units</button>
+            <button class="tab" id="other-units">Other Units</button>
+        </div>
+        <div class="input-section">
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="ages: 2 - 120">
+            
+            
+            <div class="gender-options">
+                <label>Gender</label>
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            
+            <label for="height-feet">Height</label>
+            <input type="number" id="height-feet" placeholder="feet">
+            <input type="number" id="height-inches" placeholder="inches">
+            
+            <label for="weight">Weight</label>
+            <input type="number" id="weight" placeholder="pounds">
+            
+            <button id="calculate-button" class="calculate-button">Calculate</button>
+            <button id="clear-button" class="clear-button">Clear</button>
+        </div>
+        <div class="result-section">
+            <h3 class="result">Results</h3>
+            <p id="bmi-result">Your BMI: </p>
+            <p id="bmi-category">Category: </p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
